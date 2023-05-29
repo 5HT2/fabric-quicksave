@@ -1,0 +1,6 @@
+[submodule "src/main/event"]
+	path = src/main/event
+	url = git@github.com:kami-blue/event.git
+[submodule "src/main/commons"]
+	path = src/main/commons
+	url = git@github.com:kami-blue/commons.git
