@@ -23,6 +23,11 @@ dependencies {
 
     modImplementation("net.fabricmc:fabric-language-kotlin:${property("fabric_kotlin_version")}")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_api_version")}")
+
+    modImplementation("org.reflections:reflections:${property("reflections_version")}") {
+        exclude(module = "gson")
+        exclude(module = "guava")
+    }
 }
 
 tasks {

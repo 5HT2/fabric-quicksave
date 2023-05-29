@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "quicksave",
+  "version": "${mod_version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Quicksave",
+  "description": "Quicksaving! In Minecraft! Quickly save a backup and reload from it in-game.",
   "authors": [
-    "Me!"
+    "5HT2"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://frogg.ie/",
+    "sources": "https://github.com/5HT2/fabric-quicksave/"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "OSL-3.0",
+  "icon": "assets/quicksave/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -26,15 +26,16 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "quicksave.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.12",
-    "fabric": "*",
-    "minecraft": "1.19.x",
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
     "java": ">=17",
-    "fabric-language-kotlin": ">=1.9.0+kotlin.1.8.0"
+    "fabric-language-kotlin": ">=1.9.2+kotlin.1.8.10",
+
   },
   "suggests": {
     "another-mod": "*"
